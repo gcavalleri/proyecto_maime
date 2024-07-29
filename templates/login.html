@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap">
+   <style>
+        body{
+            background-image: url("{{url_for('static',filename='img/fondo1.png')}}");
+            font-family: 'Pixelify Sans', sans-serif;
+        }
+   </style>
+</head>
+<body>
+    <div class="container">    
+    
+        <h1>Iniciar Sesión</h1>
+    
+        <form action="{{ url_for('login') }}" id="formulario" method="POST">
+            <label for="nombre">Usuario:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+    
+            <label for="contrasenia">Contraseña:</label><br>
+            <input type="password" id="contrasenia" name="contrasenia" required><br><br>
+    
+            <input type="submit" id="Iniciar" value="Iniciar Sesión">
+        </form>
+    
+        <div class="boton_registro">
+            <a href="{{ url_for('registro') }}">Registrarse</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+body{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+}.card-button{
+    width:  8rem;
+    margin: 6px;
+}
+.card-img-button{
+    width:80px;
+    height: 80px;
+    border-radius: 30%;
+}
+.mensaje-cocina{
+    height: 70%;
+}
+.box-missiones,
+.box-cocina{
+    padding: 25px 45px;
+}
+
+.box-table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.table {
+    width: 90%;
+    max-width: 800px;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+thead {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+th, td {
+    padding: 110px;
+    text-align: center;
+    border-bottom: 1px solid #dddddd;
+}
+
+th {
+    font-weight: bold;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.box-missiones p,
+.box-missiones h5{
+    font-size: 10px;
+}
+.carta img{
+    width: 120px;
+    height: 200px;
+    filter: grayscale(100%);
+    transition: filter 0.3s;
+}
+.carta[data-unlocked="true"] img {
+    filter: none;
+}
+.carrusel {
+    display: flex;
+    overflow-x: scroll;
+}
+.gacha-button {
+    padding: 10px 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 30%;
+    font-size: 1em;
+}
+.resultado-gatcha {
+    margin-left: 20px;
+    font-size: 1.2em;
+    text-align: center;
+}
